@@ -12,9 +12,9 @@
 
 01 - Ide eclipse sts.<br>
 02 - Java 17.<br>
-03 - Interfacebr>
+03 - Interface.<br>
 04 - Classe abstrata.<br>
-05 - Repository Genericabr>
+05 - Repository Generica.<br>
 06 - Banco de dados postgres-sql.<br>
 07 - Lombok.<br>
 08 - Spring boot 3.4.5.<br>
