@@ -12,8 +12,12 @@
 
 01 - Ide eclipse sts.<br>
 02 - Java 17.<br>
-03 - banco de dados postgres-sql.<br>
-04 - lombok.<br>
-05 - Spring boot 3.4.5.<br>
-06 - Config server.<br>
-07 - Repositorio config server. 👉 [Link do repositorio config serve](https://github.com/EduardoNofre/config-server-portal-noticias)<br>
+03 - Interfacebr>
+04 - Classe abstratabr>
+05 - Repository Genericabr>
+06 - Banco de dados postgres-sql.<br>
+07 - Lombok.<br>
+08 - Spring boot 3.4.5.<br>
+09 - Config server.<br>
+10 - Repositorio config server. 👉 [Link do repositorio config serve](https://github.com/EduardoNofre/config-server-portal-noticias)<br>
+
