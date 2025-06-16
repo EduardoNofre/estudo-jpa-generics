@@ -13,7 +13,7 @@
 01 - Ide eclipse sts.<br>
 02 - Java 17.<br>
 03 - Interfacebr>
-04 - Classe abstratabr>
+04 - Classe abstrata.<br>
 05 - Repository Genericabr>
 06 - Banco de dados postgres-sql.<br>
 07 - Lombok.<br>
