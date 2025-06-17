@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.br.estudo.generics.repository.api.app.dto.EstudoDTO;
+import com.br.estudo.generics.repository.api.app.service.EstudoService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
@@ -20,7 +21,9 @@ import jakarta.validation.Valid;
 @RequestMapping("/categoria")
 @Tag(name = "Estudos", description = "Recurso Estudo controller Api")
 public class EstudoController {
-
+	
+	private EstudoService estudoService;
+	
 	@Operation(summary = "listar", description = "listar")
 	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Sucesso", content = {
 			@Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = EstudoDTO.class))) }),

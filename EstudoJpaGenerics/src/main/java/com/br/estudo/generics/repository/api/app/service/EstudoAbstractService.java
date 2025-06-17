@@ -8,9 +8,15 @@ import com.br.estudo.generics.repository.api.app.repository.EstudoRepository;
 public abstract class EstudoAbstractService extends AbstractDaoService<EstudoRepository> implements RegraServiceGenerics {
 
 	protected transient EstudoRepository estudoRepository;
+	
 
-	public void regraEstudo() {
+	public void estudoPaginado() {
 
-		regra();
+		
+	}
+
+	public void parseModelMapper() {
+
+		
 	}
 }
