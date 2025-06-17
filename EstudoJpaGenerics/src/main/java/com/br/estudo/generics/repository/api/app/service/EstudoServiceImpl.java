@@ -2,14 +2,19 @@ package com.br.estudo.generics.repository.api.app.service;
 
 import java.util.List;
 
-import com.br.estudo.generics.repository.api.app.dto.EstudoDTO;
+import org.modelmapper.TypeToken;
+import org.springframework.stereotype.Service;
 
-public class EstudoServiceImpl implements EstudoService{
+import com.br.estudo.generics.repository.api.app.dto.EstudoDTO;
+import com.br.estudo.generics.repository.api.app.repository.EstudoRepository;
+
+@Service
+public class EstudoServiceImpl extends AbstractDaoService<EstudoRepository> implements EstudoService {
 
 	@Override
 	public List<EstudoDTO> listar() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return modelMapper.map(repository.findAll(), new TypeToken<List<EstudoDTO>>() {}.getType());
 	}
 
 	@Override
@@ -27,7 +32,7 @@ public class EstudoServiceImpl implements EstudoService{
 	@Override
 	public void excluir() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -36,5 +41,4 @@ public class EstudoServiceImpl implements EstudoService{
 		return null;
 	}
 
-	
 }

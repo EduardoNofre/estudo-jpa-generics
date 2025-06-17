@@ -1,10 +1,16 @@
 package com.br.estudo.generics.repository.api.app.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.br.estudo.generics.repository.api.app.dto.EstudoDTO;
 import com.br.estudo.generics.repository.api.app.service.EstudoService;
@@ -18,10 +24,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
-@RequestMapping("/categoria")
+@RestController
+@RequestMapping("/estudo")
 @Tag(name = "Estudos", description = "Recurso Estudo controller Api")
 public class EstudoController {
 	
+	@Autowired
 	private EstudoService estudoService;
 	
 	@Operation(summary = "listar", description = "listar")
@@ -34,10 +42,10 @@ public class EstudoController {
 			@ApiResponse(responseCode = "409", description = "Não conformidade na regra de negocio", content = @Content),
 			@ApiResponse(responseCode = "500", description = "Interno sem causa mapeada.", content = @Content),
 			@ApiResponse(responseCode = "504", description = "Gateway Time-Out", content = @Content) })
-	@GetMapping()
-	public void listar() {
-		// TODO Auto-generated method stub
-
+	@GetMapping("/listar")
+	public ResponseEntity<List<EstudoDTO>>  listar() {
+		
+		return ResponseEntity.status(HttpStatus.OK).body(estudoService.listar());
 	}
 
 	@Operation(summary = "buscar", description = "buscar")
