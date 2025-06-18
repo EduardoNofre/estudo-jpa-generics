@@ -2,6 +2,19 @@
   Vamos estudar Repository generics
 </h1>
 
+# Pré Requisito.
+
+01 - Ide eclipse sts.<br>
+02 - Java 17.<br>
+03 - Interface.<br>
+04 - Classe abstrata.<br>
+05 - Repository Generica.<br>
+06 - Banco de dados postgres-sql.<br>
+07 - Lombok.<br>
+08 - Spring boot 3.4.5.<br>
+09 - Config server.<br>
+10 - Repositorio config server. 👉 [Link do repositorio config serve](https://github.com/EduardoNofre/config-server-portal-noticias)<br>
+
 <p align="center">
   <img src="https://github.com/EduardoNofre/estudo-jpa-generics/blob/main/repositoryGenerico.png" alt="Sublime's custom image"/>  
 </p>
@@ -14,14 +27,5 @@
   Api basica 
 </h1>
 
-01 - Ide eclipse sts.<br>
-02 - Java 17.<br>
-03 - Interface.<br>
-04 - Classe abstrata.<br>
-05 - Repository Generica.<br>
-06 - Banco de dados postgres-sql.<br>
-07 - Lombok.<br>
-08 - Spring boot 3.4.5.<br>
-09 - Config server.<br>
-10 - Repositorio config server. 👉 [Link do repositorio config serve](https://github.com/EduardoNofre/config-server-portal-noticias)<br>
+
 
